@@ -1,0 +1,1324 @@
+/* 롯데마트행복체 */
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
+.lottemarthappy * {
+  font-family: 'LotteMartHappy', sans-serif;
+}
+
+/* 롯데마트행복체 */
+
+@font-face {
+  font-family: 'S-CoreDream-1Thin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-7ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-8Heavy';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어드림 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #020721;
+  cursor: none;
+}
+
+/* 커서 */
+body {
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  mix-blend-mode: difference;
+  transform: translate(-30%, -100%);
+  width: 60px;
+  height: 80px;
+  z-index: 10000;
+  animation: cursor 10s linear infinite;
+  pointer-events: none;
+}
+
+.cursor .arrow {
+  display: none;
+}
+
+@keyframes cursor {
+  0% {
+    transform-origin: 0% 0%;
+    transform: rotate(0deg) translate(-35%, -90%);
+  }
+
+  25% {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) translate(-35%, -90%);
+  }
+
+  75% {
+    transform-origin: 0% 0%;
+    transform: rotate(-45deg) translate(-35%, -90%);
+  }
+
+  100% {
+    transform-origin: 0% 0%;
+    transform: rotate(0deg) translate(-35%, -90%);
+  }
+}
+
+/* 커서 */
+
+body {
+  font-family: 'LotteMartHappy', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #020721;
+  background-color: #fff;
+
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1280px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  box-sizing: border-box;
+  z-index: 10000;
+  transition: all 0.25s;
+  backdrop-filter: blur(10px) contrast(.8);
+}
+
+header>a {
+  position: relative;
+}
+
+header .logo_w {
+  display: block
+}
+
+header .logo_b {
+  display: none;
+}
+
+header:hover .logo_b {
+  display: block;
+}
+
+header:hover .logo_w {
+  display: none;
+}
+
+/* nav */
+header nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header nav ul.header_depth1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul.header_depth1>li {
+  position: relative;
+  width: 140px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+@media (max-width: 1440px) {
+  header nav ul.header_depth1>li {
+    width: 122px;
+  }
+}
+
+header nav ul.header_depth1>li a {
+  position: relative;
+  display: inline-block;
+  font-family: "LotteMartHappy";
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 85px;
+  letter-spacing: normal;
+  color: #f1f5f7;
+}
+
+header:hover nav ul.header_depth1>li a {
+  color: #020721;
+}
+
+
+header:hover nav ul.header_depth1 li {
+  width: 10vw;
+}
+
+/* 형광펜 */
+header nav ul.header_depth1 li a {
+  background: linear-gradient(to top, #5b54a4 10%, transparent 10%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+}
+
+header nav ul.header_depth1 li:hover a {
+  background-size: 100% 100%;
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li:hover .hover1 {
+  background-size: 100% 100%;
+}
+
+/*형광펜 */
+
+header:hover nav ul.header_depth1 li a {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 700;
+}
+
+header:hover {
+  background: #f1f5f7;
+  border-bottom: 1px #5b54a4 solid;
+}
+
+/* 서브상자 */
+header .depth2_bg {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #f1f5f7;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  display: none;
+
+}
+
+
+header .depth2_bg .header_depth2_ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+header .depth2_bg .header_depth2_ul>li {
+  width: 140px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.25s;
+}
+
+header:hover .depth2_bg .header_depth2_ul>li {
+  width: 10vw;
+
+}
+
+@media (max-width: 1440px) {
+  header .depth2_bg .header_depth2_ul>li {
+    width: 122px;
+
+  }
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li {
+  padding: 10px 0;
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li a {
+  display: inline-block;
+  padding-bottom: 1px;
+  background: linear-gradient(to top, #5b54a4 10%, transparent 10%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.4s;
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li:hover a {
+  background-size: 100% 100%;
+}
+
+/* nav */
+/* 로그인버튼 */
+header .etc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  color: #f1f5f7;
+  border: 2px #f1f5f7 solid;
+  border-radius: 50px;
+  padding: 5px 10px;
+  position: relative;
+  overflow: hidden
+}
+
+header .etc strong {
+  padding: 0 10px;
+  font-size: 24px;
+  color: #f1f5f7;
+}
+
+header .etc .hamburger {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  z-index: 1000;
+  display: inline-block;
+}
+
+header .etc .button span {
+  position: absolute;
+  height: 6px;
+  border-radius: 4px;
+  width: 100%;
+  background: #f1f5f7;
+  top: 0;
+  transition: transform 0.25s ease-in-out;
+
+}
+
+header:hover .etc {
+  color: #020721;
+  border: 2px #020721 solid;
+}
+
+header:hover .etc .button strong {
+  color: #020721;
+}
+
+header:hover .etc .button span {
+  background-color: #020721;
+}
+
+header .etc:hover {
+  color: #5b54a4;
+  border: 2px #5b54a4 solid;
+}
+
+header .etc:hover .button strong {
+  color: #5b54a4;
+  mix-blend-mode: white;
+}
+
+header .etc:hover .button span {
+  background-color: #5b54a4
+}
+
+header .etc:hover .color {
+  visibility: visible;
+  opacity: 1;
+  left: 0px;
+}
+
+
+header .etc .button .hamburger span:nth-child(1) {
+  top: 0%;
+}
+
+header .etc .button span:nth-child(2),
+header .etc .button span:nth-child(3) {
+  top: 50%;
+}
+
+header .etc .button span:nth-child(4) {
+  top: 100%;
+}
+
+header .etc .button.active span:nth-child(1),
+header .etc .button.active span:nth-child(4) {
+  opacity: 0;
+}
+
+header .etc .button.active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+header .etc .button.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* login hover*/
+
+.login {
+  width: 400px;
+  height: 1080px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #f1f5f7;
+  z-index: 999;
+  right: -400px;
+  transition: all 0.5s ease-in-out;
+}
+
+.login {
+  display: block;
+}
+
+.login.slide {
+  display: block;
+  right: 0;
+}
+
+.login h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 9px;
+}
+
+.login .login_type label {
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* login input */
+.Search {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.Search input {
+  width: 300px;
+  height: 54px;
+  border-radius: 30px;
+  border: #5b54a4 2px solid;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.Search img {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+.login_type {
+  height: 50px;
+}
+
+.login_type input[type="radio"] {
+  display: none;
+}
+
+.login_type input[type="radio"]+label {
+  font-size: 18px;
+  color: #02072166;
+  background: linear-gradient(to top, #5b54a4 10%, transparent 10%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.4s;
+}
+
+.login_type input[type="radio"]:checked+label {
+  color: #5b54a4;
+  background-size: 100% 100%;
+}
+
+
+.login .tap {
+  display: none;
+}
+
+.login_type input[id="tap01"]:checked~.con1 {
+  display: block;
+}
+
+.login_type input[id="tap02"]:checked~.con2 {
+  display: block;
+}
+
+.con1 {
+  text-align: center;
+}
+
+.con1 input[type='text'],
+input[type='password'] {
+  width: 300px;
+  height: 54px;
+  border-radius: 30px;
+  border: none;
+  background: #eee;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.con1 input[type='text'] {
+  margin: 30px 0 10px;
+}
+
+.con1 input[type='password'] {
+  margin: 10px 0 20px;
+}
+
+#login_keep {
+  display: none;
+}
+
+#login_keep+label {
+  vertical-align: middle;
+}
+
+.st0 {
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-width: 4px;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 4px;
+  stroke-miterlimit: 10;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 60;
+}
+
+#login_keep:checked+label .st1 {
+  stroke: #5b54a4;
+  animation: dash 0.3s linear alternate 1;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 60;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#login_keep+label .border {
+  display: inline-block;
+  border: #020721 2px solid;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+#login_keep+label svg {
+  position: relative;
+  top: -2px;
+  left: -1px;
+}
+
+#login_keep:checked+label .border {
+  border-color: #5b54a4;
+}
+
+
+#login_keep+label span {
+  font-size: 16px;
+  position: relative;
+  top: -4px;
+}
+
+#login_keep:checked+label span {
+  color: #5b54a4;
+}
+
+#login_keep+label {
+  padding-left: 10px;
+}
+
+#login_keep~p {
+  display: none;
+  font-weight: 100;
+  font-size: 14px;
+  color: #666;
+  padding-top: 30px;
+}
+
+#login_keep:checked~p {
+  display: block;
+}
+
+.login_do {
+  width: 100%;
+  height: 120px;
+  background: #f1f5f7;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+.login_do::before {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  transform: translateX(-300px);
+  transition: all 2s;
+  background: rgb(89, 77, 131);
+  content: "";
+  display: block;
+  z-index: 1;
+  mix-blend-mode: lighten;
+}
+
+/* 616 에프터 박스 호버효과 */
+.login_do:hover::before {
+  transform: translateX(0);
+}
+
+.login_do>a {
+  position: absolute;
+  top: 45px;
+  left: 10%;
+  font-size: 50px;
+
+}
+
+.login_do .trapezoid {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  border-bottom: 120px solid #020721;
+  border-left: 50px solid transparent;
+  border-right: 0px solid transparent;
+  width: 150px;
+  height: 0;
+  z-index: 10;
+}
+
+.login_do .trapezoid ul li {
+  height: 40px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  ;
+  transition: all 1s;
+}
+
+.login_do .trapezoid ul li:hover {
+  background: linear-gradient(to left, #5b54a4, #020721)
+}
+
+.login_do .trapezoid ul li a {
+  color: #f1f5f7;
+
+}
+
+.con1 input[type='text']::placeholder,
+input[type='password']::placeholder {
+  font-weight: bold;
+}
+
+.con1 .or {
+  margin: 20px 0;
+}
+
+.con1 .or a {
+  padding: 0 5px;
+  opacity: 50%;
+}
+
+.con1 .or a:hover {
+  opacity: 100%;
+}
+
+.con1 .or fieldset {
+  margin: 30px 0;
+  color: #666;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+/* 일회용 로그인 */
+.con2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.con2 p {
+  padding: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.con2 p span {
+  color: #5b54a4;
+}
+
+.con2 input {
+  width: 150px;
+  height: 54px;
+  border-radius: 30px;
+  border: none;
+  background: #eee;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  outline: none;
+
+}
+
+.con2 input::placeholder {
+  font-weight: bold;
+}
+
+.con .con2_login {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  color: #5b54a4;
+}
+
+.con2_login {
+  font-size: 24px;
+  padding: 15px 120px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  background: #5b54a4;
+  color: #f1f5f7;
+  display: inline-block;
+}
+
+.disposable #lang {
+  outline: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  color: #666;
+  font-weight: 900;
+  font-family: 'S-CoreDream-7ExtraBold';
+  margin-top: 50px;
+}
+
+.nav-up {
+  top: -84px;  
+}
+
+/* header */
+
+/* section */
+/* 배경화면 */
+#main {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../images/pianowa_banner.jpg) no-repeat center top;
+  height: 1080px;
+}
+
+/* 배경화면  */
+
+.content1 {
+
+  width: 100%;
+  height: 1500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content1 .title_box {
+  padding: 300px 0 240px;
+  text-align: center;
+
+}
+
+.content1 .title_box h1 {
+  font-size: clamp(53.33333px, 4.16667vw, 4.16667vw);
+  margin-bottom: clamp(26.66667px, 2.08333vw, 2.08333vw);
+}
+
+.content1 .title_box h2 {
+  font-family: "S-CoreDream-3Light";
+  font-size: clamp(17.33333px, 1.35417vw, 1.35417vw);
+  line-height: 1.53;
+  letter-spacing: -0.015em;
+}
+
+/*con1 슬라이드 */
+.content1 .slide-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.slide-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+
+.content1 .slide-container a {
+  padding: 0 50px;
+}
+
+/* 콘텐츠2 */
+.content2 {
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content2 h1 {
+  padding: 100px 0 120px;
+  text-align: center;
+  font-size: clamp(53.33333px, 4.16667vw, 4.16667vw);
+  margin-bottom: clamp(26.66667px, 2.08333vw, 2.08333vw);
+}
+
+.content2 ul {
+  position: relative;
+  top: 16%;
+}
+
+.content2 .bgcolor {  
+  width: 484%;
+  height: 1000px;
+  padding-top: 100px;
+  position: absolute;
+  top: -87%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+/* 클레스 버튼 설명 */
+.content2 .class1_box{background: #b29fdd;}
+
+.content2 .class1_box img:nth-child(1) {
+  position: absolute;
+  top: 30%;
+  right: 12%;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.content2 .class1_box img:nth-child(2) {
+  position: absolute;
+  top: 71%;
+  left: 20%;
+}
+
+.content2 .class1_box img:nth-child(3) {
+  position: absolute;
+  left: 10%;
+}
+.content2 .class1_box img:nth-child(4) {
+  position: absolute;
+  left: 50%;
+top: 71%;
+transform: rotate(35deg);
+width: 60px;
+}
+.content2 .class1_box img:nth-child(5) {
+  position: absolute;
+  left: 23%;
+top: 57%;
+transform: rotate(15deg);
+width: 60px;
+}
+.content2 .class1_box img:nth-child(6) {
+  position: absolute;
+  left: 74%;
+  top: 15%;
+transform: rotate(30deg);
+width: 80px;
+}
+
+
+
+
+
+.content2 .class1_box p {
+  position: absolute;
+  top: 67%;
+  left: 57%;
+  color: #f1f5f7;
+  background: #5b54a4;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content2 .class1_box p span{margin-top: 30px;}
+
+.content2 .class1_box{display: none;}
+
+/* 콘서트 버튼 설명 */
+.content2 .consert1_box{background: #ccf2ef;}
+
+.content2 .consert1_box img:nth-child(1) {
+  position: absolute;
+  top: 15%;
+  right: 68%;
+}
+
+.content2 .consert1_box img:nth-child(2) {
+  position: absolute;
+  top: 9%%;
+  left: 68%;
+}
+
+.content2 .consert1_box img:nth-child(3) {
+  position: absolute;
+  top: 57%;
+  left: 64%;
+}
+.content2 .consert1_box img:nth-child(4) {
+  position: absolute;
+  left: 43%;
+top: 19%;
+transform: rotate(10deg);
+width: 90px;
+}
+.content2 .consert1_box img:nth-child(5) {
+  position: absolute;
+  left: 29%;
+top: 56%;
+
+width: 60px;
+}
+.content2 .consert1_box img:nth-child(6) {
+  position: absolute;
+  left: 50%;
+  top: 76%;
+transform: rotate(30deg);
+width: 120px;
+}
+
+.content2 .consert1_box p {
+  position: absolute;
+  top: 67%;
+  left: 18%;
+  color: #f1f5f7;
+  background: #04c5b5;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 25px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content2 .consert1_box p span{margin-top: 30px;}
+
+/* 커뮤니티 박스 버튼 */
+.content2 .community1_box{ background: #ffd6dd;}
+
+
+.content2 .community1_box img:nth-child(1) {
+  position: absolute;
+  top: 54%;
+  right: 60%;
+}
+
+.content2 .community1_box img:nth-child(2) {
+  position: absolute;
+  top: 19%;
+  left: 63%;
+}
+
+.content2 .community1_box img:nth-child(3) {
+  position: absolute;
+  top: 9%;
+  left: 9%;
+}
+.content2 .community1_box img:nth-child(4) {
+  position: absolute;
+  left: 52%;
+top: 8%;
+transform: rotate(-15deg);
+width: 90px;
+}
+.content2 .community1_box img:nth-child(5) {
+  position: absolute;
+  left: 62%;
+top: 72%;
+
+width: 70px;
+}
+.content2 .community1_box img:nth-child(6) {
+  position: absolute;
+  left: 48%;
+  top: 78%;
+transform: rotate(-25deg);
+width: 60px;
+}
+
+.content2 .community1_box p {
+  position: absolute;
+  top: 66%;
+  left: 71%;
+  color: #f1f5f7;
+  background: #ff7f95;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content2 .community1_box p span{margin-top: 30px;}
+
+/* 오버 효과 */
+.content2 ul li:nth-child(1):hover~div{display: none;}
+.content2 ul li:nth-child(1):hover~.class1_box, .bgcolor:hover{display: block; z-index: 2;}
+.content2 ul li:nth-child(1):hover~.class1_box img:nth-child(1){top: calc(40%); opacity: 1;}
+/* .content2 ul li:nth-child(1):hover~.class1_box img:nth-child(2)
+.content2 ul li:nth-child(1):hover~.class1_box img:nth-child(3)
+.content2 ul li:nth-child(1):hover~.class1_box img:nth-child(4)
+.content2 ul li:nth-child(1):hover~.class1_box img:nth-child(5)
+.content2 ul li:nth-child(1):hover~.class1_box img:nth-child(6) */
+
+.content2 ul li:nth-child(2):hover~div{display: none;}
+.content2 ul li:nth-child(2):hover~.consert1_box, .bgcolor:hover{display: block; z-index: 2;}
+.content2 ul li:nth-child(3):hover~div{display: none;}
+.content2 ul li:nth-child(3):hover~.community1_box, .bgcolor:hover{display: block; z-index: 2;}
+
+.content2 ul li {
+  font-size: clamp(40px, 3.125vw, 3.125vw);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0em;
+  width: clamp(264px, 20vw, 20vw);
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 40px;
+  border: #000000 2px solid;
+  z-index: 2;
+}
+
+.content2 ul .class1 {
+  position: relative;
+  border-color: #5b54a4;
+  color: #5b54a4;
+  z-index: 3;
+}
+
+.content2 ul .consert1 {
+  position: relative;
+  border-color: #04c5b5;
+  color: #04c5b5;
+  z-index: 3;
+}
+
+.content2 ul .community1 {
+  position: relative;
+  border-color: #ff7f95;
+  color: #ff7f95;
+  z-index: 3;
+}
+
+/* 콘텐트 3 테이블 */
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content3 h1 {
+  font-size: clamp(53.33333px, 4.16667vw, 4.16667vw);
+  margin-bottom: 130px;
+}
+
+.content3 table h2 {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+.content3 table p {
+  font-size: 18px;
+}
+
+.content3 table h2,
+.content3 table p {
+  opacity: 0.5;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.content3 table th:hover {
+  opacity: 1;
+  color: #5b54a4ff;
+  text-shadow: #00000066 1px 1px 1px 5px;
+}
+
+.content3 table img {
+  display: inline-block;
+  box-shadow: 2px 2px 2px 2px #00000066;
+}
+
+.content3 table, .content3 table th  {
+  margin-bottom: 300px;
+  border: 1px #000000 solid;
+}
+
+/* 콘텐츠 4 */
+.content4 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content4 h1 {
+  font-size: clamp(53.33333px, 4.16667vw, 4.16667vw);
+  margin-bottom: 130px;
+  margin-top: 40px;
+}
+
+.content4 .text {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  line-height: 100px;
+  top: 300px;
+  left: auto;
+}
+
+.content4 .text h2 {
+  color: #fff;
+  font-size: 70px;
+  padding-bottom: 50px;
+}
+
+.content4 .text h3 {
+  color: #f8eda4;
+  font-size: 60px;
+}
+
+.content4 .goods {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background: #cdbfec;
+  position: relative;
+  padding: 50px 0;
+  justify-content: space-evenly;
+}
+
+.content4 .goods p{background-color: #a78ee0; border-radius: 20px; color: #f1f5f7; display: inline-block; padding: 5px 10px; margin-left: 50%;}
+.content4 .goods .g1 img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content4 .goods .g2 img {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 65%;
+}
+
+.content4 .goods .g3 img {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 51%;
+}
+
+.content4 .goods .g4 img {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 100%;
+}
+
+.content4 .goods .g5 img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* 배너 */
+.banner {
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.banner>div {
+  box-sizing: border-box;
+  padding: 30px 20px;
+  width: calc(100%/3);
+  height: 24vh;
+  line-height: 34px;
+}
+
+.banner .b1 {
+  background: url(../images/banner1.jpg) no-repeat;
+  background-size: contain;
+}
+
+.banner .b2 {
+  background: url(../images/banner2.jpg) no-repeat;
+  background-size: contain
+}
+
+.banner .b3 {
+  background: url(../images/banner3.jpg) no-repeat;
+  background-size: contain
+}
+
+
+.banner div h2 {
+  padding-bottom: 80px;
+}
+
+.banner div h3 {
+  color: #f1f5f7;
+}
+
+.banner .b2 h3 {
+  color: #866e65;
+}
+
+.banner .b1 h3 span {
+  display: inline-block;
+  color: #fff;
+  background: #75bbd3;
+  border-radius: 50%;
+  width: 5.6%;
+  text-align: center;
+  /*vertical-align: middle*/
+  ;
+}
+
+.banner .b2 h3 span {
+  display: inline-block;
+  color: #fff;
+  background: #c18d87;
+  border-radius: 50%;
+  width: 5.6%;
+  text-align: center;
+}
+
+.banner .b3 h3 span{display: inline-block;
+  color: #fff;
+  background: #7a2620;
+  border-radius: 50%;
+  width: 5.6%;
+  text-align: center;}
+
+  /* 푸터 */
+  footer{width: 100%; margin: 0 auto; height: 370px; padding: 56px 80px; background: #020721; display: flex; justify-content: center; box-sizing: border-box;}
+  footer .footer_inner{width: 100%;}
+  footer .footer_inner .footer_logo{width: 126px; float: left; margin-bottom: 50px;}
+  footer .footer_inner .footer_sns img{width: 40px; height: 40px;}
+  footer .footer_inner .footer_sns {float: right;}
+  footer .footer_inner .footer_sns li{float: left; margin-left: 20px;}
+
+  footer .footer_inner .footer_menu{float: left; clear: both; margin-bottom: 72px; display: block; border-bottom:#5b54a4 1px solid ; width: 100%;}
+  footer .footer_inner .footer_menu li{float: left; margin-right: 20px;}
+  footer .footer_inner .footer_menu li a{color: #f1f5f7; font-size: 18px;}

@@ -1,0 +1,975 @@
+/* 롯데마트행복체 */
+@font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
+.lottemarthappy * {
+    font-family: 'LotteMartHappy', sans-serif;
+}
+
+/* 롯데마트행복체 */
+
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 에스코어드림 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #020721;
+    cursor: none;
+}
+
+/* 커서 */
+body {
+    cursor: none;
+}
+
+.cursor {
+    position: absolute;
+    mix-blend-mode: difference;
+    transform: translate(-30%, -100%);
+    width: 60px;
+    height: 80px;
+    z-index: 10000;
+    animation: cursor 10s linear infinite;
+    pointer-events: none;
+}
+
+.cursor .arrow {
+    display: none;
+}
+
+@keyframes cursor {
+    0% {
+        transform-origin: 0% 0%;
+        transform: rotate(0deg) translate(-35%, -90%);
+    }
+
+    25% {
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) translate(-35%, -90%);
+    }
+
+    75% {
+        transform-origin: 0% 0%;
+        transform: rotate(-45deg) translate(-35%, -90%);
+    }
+
+    100% {
+        transform-origin: 0% 0%;
+        transform: rotate(0deg) translate(-35%, -90%);
+    }
+}
+
+/* 커서 */
+
+body {
+    font-family: 'LotteMartHappy', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #020721;
+    background-color: #fff;
+
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-sizing: border-box;
+    z-index: 10000;
+    transition: all 0.25s;
+    backdrop-filter: blur(10px) contrast(.8);
+}
+
+header>a {
+    position: relative;
+}
+
+header .logo_w {
+    display: block
+}
+
+header .logo_b {
+    display: none;
+}
+
+header:hover .logo_b {
+    display: block;
+}
+
+header:hover .logo_w {
+    display: none;
+}
+
+/* nav */
+header nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header nav ul.header_depth1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul.header_depth1>li {
+    position: relative;
+    width: 140px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+@media (max-width: 1440px) {
+    header nav ul.header_depth1>li {
+        width: 122px;
+    }
+}
+
+header nav ul.header_depth1>li a {
+    position: relative;
+    display: inline-block;
+    font-family: "LotteMartHappy";
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 85px;
+    letter-spacing: normal;
+    color: #f1f5f7;
+}
+
+header:hover nav ul.header_depth1>li a {
+    color: #020721;
+}
+
+
+header:hover nav ul.header_depth1 li {
+    width: 10vw;
+}
+
+/* 형광펜 */
+header nav ul.header_depth1 li a {
+    background: linear-gradient(to top, #5b54a4 10%, transparent 10%) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s;
+}
+
+header nav ul.header_depth1 li:hover a {
+    background-size: 100% 100%;
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li:hover .hover1 {
+    background-size: 100% 100%;
+}
+
+/*형광펜 */
+
+header:hover nav ul.header_depth1 li a {
+    font-family: 'LotteMartHappy';
+    font-style: normal;
+    font-weight: 700;
+}
+
+header:hover {
+    background: #f1f5f7;
+    border-bottom: 1px #5b54a4 solid;
+}
+
+/* 서브상자 */
+header .depth2_bg {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #f1f5f7;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+
+}
+
+
+header .depth2_bg .header_depth2_ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+header .depth2_bg .header_depth2_ul>li {
+    width: 140px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+header:hover .depth2_bg .header_depth2_ul>li {
+    width: 10vw;
+
+}
+
+@media (max-width: 1440px) {
+    header .depth2_bg .header_depth2_ul>li {
+        width: 122px;
+
+    }
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li {
+    padding: 10px 0;
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li a {
+    display: inline-block;
+    padding-bottom: 1px;
+    background: linear-gradient(to top, #5b54a4 10%, transparent 10%) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.4s;
+}
+
+header .depth2_bg .header_depth2_ul li .header_depth2 li:hover a {
+    background-size: 100% 100%;
+}
+
+/* nav */
+/* 로그인버튼 */
+header .etc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    color: #f1f5f7;
+    border: 2px #f1f5f7 solid;
+    border-radius: 50px;
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden
+}
+
+header .etc strong {
+    padding: 0 10px;
+    font-size: 24px;
+    color: #f1f5f7;
+}
+
+header .etc .hamburger {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    z-index: 1000;
+    display: inline-block;
+}
+
+header .etc .button span {
+    position: absolute;
+    height: 6px;
+    border-radius: 4px;
+    width: 100%;
+    background: #f1f5f7;
+    top: 0;
+    transition: transform 0.25s ease-in-out;
+
+}
+
+header:hover .etc {
+    color: #020721;
+    border: 2px #020721 solid;
+}
+
+header:hover .etc .button strong {
+    color: #020721;
+}
+
+header:hover .etc .button span {
+    background-color: #020721;
+}
+
+header .etc:hover {
+    color: #5b54a4;
+    border: 2px #5b54a4 solid;
+}
+
+header .etc:hover .button strong {
+    color: #5b54a4;
+    mix-blend-mode: white;
+}
+
+header .etc:hover .button span {
+    background-color: #5b54a4
+}
+
+header .etc:hover .color {
+    visibility: visible;
+    opacity: 1;
+    left: 0px;
+}
+
+
+header .etc .button .hamburger span:nth-child(1) {
+    top: 0%;
+}
+
+header .etc .button span:nth-child(2),
+header .etc .button span:nth-child(3) {
+    top: 50%;
+}
+
+header .etc .button span:nth-child(4) {
+    top: 100%;
+}
+
+header .etc .button.active span:nth-child(1),
+header .etc .button.active span:nth-child(4) {
+    opacity: 0;
+}
+
+header .etc .button.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+header .etc .button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* login hover*/
+
+.login {
+    width: 400px;
+    height: 1080px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #f1f5f7;
+    z-index: 999;
+    right: -400px;
+    transition: all 0.5s ease-in-out;
+}
+
+.login {
+    display: block;
+}
+
+.login.slide {
+    display: block;
+    right: 0;
+}
+
+.login h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 9px;
+}
+
+.login .login_type label {
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* login input */
+.Search {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.Search input {
+    width: 300px;
+    height: 54px;
+    border-radius: 30px;
+    border: #5b54a4 2px solid;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.Search img {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+.login_type {
+    height: 50px;
+}
+
+.login_type input[type="radio"] {
+    display: none;
+}
+
+.login_type input[type="radio"]+label {
+    font-size: 18px;
+    color: #02072166;
+    background: linear-gradient(to top, #5b54a4 10%, transparent 10%) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.4s;
+}
+
+.login_type input[type="radio"]:checked+label {
+    color: #5b54a4;
+    background-size: 100% 100%;
+}
+
+
+.login .tap {
+    display: none;
+}
+
+.login_type input[id="tap01"]:checked~.con1 {
+    display: block;
+}
+
+.login_type input[id="tap02"]:checked~.con2 {
+    display: block;
+}
+
+.con1 {
+    text-align: center;
+}
+
+.con1 input[type='text'],
+input[type='password'] {
+    width: 300px;
+    height: 54px;
+    border-radius: 30px;
+    border: none;
+    background: #eee;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.con1 input[type='text'] {
+    margin: 30px 0 10px;
+}
+
+.con1 input[type='password'] {
+    margin: 10px 0 20px;
+}
+
+#login_keep {
+    display: none;
+}
+
+#login_keep+label {
+    vertical-align: middle;
+}
+
+.st0 {
+    fill: #FFFFFF;
+    stroke: #000000;
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+}
+
+.st1 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 4px;
+    stroke-miterlimit: 10;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 60;
+}
+
+#login_keep:checked+label .st1 {
+    stroke: #5b54a4;
+    animation: dash 0.3s linear alternate 1;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 60;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#login_keep+label .border {
+    display: inline-block;
+    border: #020721 2px solid;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+#login_keep+label svg {
+    position: relative;
+    top: -2px;
+    left: -1px;
+}
+
+#login_keep:checked+label .border {
+    border-color: #5b54a4;
+}
+
+
+#login_keep+label span {
+    font-size: 16px;
+    position: relative;
+    top: -4px;
+}
+
+#login_keep:checked+label span {
+    color: #5b54a4;
+}
+
+#login_keep+label {
+    padding-left: 10px;
+}
+
+#login_keep~p {
+    display: none;
+    font-weight: 100;
+    font-size: 14px;
+    color: #666;
+    padding-top: 30px;
+}
+
+#login_keep:checked~p {
+    display: block;
+}
+
+.login_do {
+    width: 100%;
+    height: 120px;
+    background: #f1f5f7;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    z-index: 2;
+}
+
+.login_do::before {
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    transform: translateX(-300px);
+    transition: all 2s;
+    background: rgb(89, 77, 131);
+    content: "";
+    display: block;
+    z-index: 1;
+    mix-blend-mode: lighten;
+}
+
+/* 616 에프터 박스 호버효과 */
+.login_do:hover::before {
+    transform: translateX(0);
+}
+
+.login_do>a {
+    position: absolute;
+    top: 45px;
+    left: 10%;
+    font-size: 50px;
+
+}
+
+.login_do .trapezoid {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    border-bottom: 120px solid #020721;
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    width: 150px;
+    height: 0;
+    z-index: 10;
+}
+
+.login_do .trapezoid ul li {
+    height: 40px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    ;
+    transition: all 1s;
+}
+
+.login_do .trapezoid ul li:hover {
+    background: linear-gradient(to left, #5b54a4, #020721)
+}
+
+.login_do .trapezoid ul li a {
+    color: #f1f5f7;
+
+}
+
+.con1 input[type='text']::placeholder,
+input[type='password']::placeholder {
+    font-weight: bold;
+}
+
+.con1 .or {
+    margin: 20px 0;
+}
+
+.con1 .or a {
+    padding: 0 5px;
+    opacity: 50%;
+}
+
+.con1 .or a:hover {
+    opacity: 100%;
+}
+
+.con1 .or fieldset {
+    margin: 30px 0;
+    color: #666;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+/* 일회용 로그인 */
+.con2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.con2 p {
+    padding: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.con2 p span {
+    color: #5b54a4;
+}
+
+.con2 input {
+    width: 150px;
+    height: 54px;
+    border-radius: 30px;
+    border: none;
+    background: #eee;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    outline: none;
+
+}
+
+.con2 input::placeholder {
+    font-weight: bold;
+}
+
+.con .con2_login {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    color: #5b54a4;
+}
+
+.con2_login {
+    font-size: 24px;
+    padding: 15px 120px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background: #5b54a4;
+    color: #f1f5f7;
+    display: inline-block;
+}
+
+.disposable #lang {
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: #666;
+    font-weight: 900;
+    font-family: 'S-CoreDream-7ExtraBold';
+    margin-top: 50px;
+}
+
+.nav-up {
+    top: -84px;
+}
+
+/* header */
+
+/* 배너 */
+#banner {
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    background: url(../images/sub_4/banner.jpg) no-repeat center;
+    box-sizing: border-box;
+}
+
+#banner .b_inner {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner .b_inner .inquiry {
+    float: right;
+    padding: 10px 20px;
+    margin-top: 84px;
+    background: #ffffff55;
+    border-radius: 10px;
+}
+
+#banner .b_inner .inquiry:hover {
+    background: #f1f5f7;
+}
+
+#banner .b_inner .inquiry:hover a {
+    color: #020721;
+}
+
+#banner .b_inner h1 {
+    text-align: center;
+    width: 100%;
+    padding-top: 120px;
+    color: #f1f5f7;
+    font-size: 40px;
+    margin-bottom: 74px;
+}
+
+#banner .b_inner form {
+    text-align: center;
+}
+
+#banner .b_inner span {
+    color: #f1f5f7;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+#banner .b_inner span img {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+}
+
+#banner .b_inner input {
+    width: 800px;
+    height: 50px;
+    margin-right: 50px;
+    border: none;
+    padding: 0 50px;
+    background: url(../images/sub_4/icon2.png) no-repeat 2% 50% #fff;
+}
+
+#banner .b_inner input:focus {
+    outline: 4px solid #5b54a4;
+}
+
+/* 자주찾는 도움말 */
+.help {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.help h1 {
+    color: #5b54a4;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.help .help_content ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.help .help_content ul li {
+    width: 230px;
+    height: 180px;
+    color: #f1f5f7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.help .help_content ul li h2 {
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 50px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.help .help_content ul li p {
+    font-family: "S-CoreDream-3Light";
+    font-size: 16px;
+}
+
+.help .help_content .help_ul_1 li:nth-child(1) {
+    background-color: #b6b3da;
+}
+
+.help .help_content .help_ul_1 li:nth-child(2),
+.help .help_content .help_ul_2 li:nth-child(1) {
+    background: #bfb3da;
+}
+
+.help .help_content .help_ul_1 li:nth-child(3),
+.help .help_content .help_ul_2 li:nth-child(2) {
+    background: #ccb3da;
+}
+
+.help .help_content .help_ul_1 li:nth-child(4),
+.help .help_content .help_ul_2 li:nth-child(3) {
+    background: #dab3d6;
+}
+
+.help .help_content .help_ul_1 li:nth-child(5),
+.help .help_content .help_ul_2 li:nth-child(4) {
+    background: #eba5ce;
+}
+
+.help .help_content .help_ul_2 li:nth-child(5) {
+    background: #eba4c4;
+}
+
+/* 문의 유형별 */
+.Inquiry_Type {
+    background: #f1f5f7;
+}
+
+.Inquiry_Type h1 {
+    width: 1400px;
+    margin: 0 auto;
+    color: #5b54a4;
+    font-size: 24px;
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+
+.Inquiry_Type_box {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Inquiry_Type_box a {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #5b54a4 5px solid;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.Inquiry_Type_box a img {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.Inquiry_Type_box a span {
+    font-size: 18px;
+    font-family: 'S-CoreDream-6Bold';
+    display: block;
+}
+
+.Inquiry_Type_box a:hover {
+    background: #020721;
+    color: #f1f5f7;
+}
