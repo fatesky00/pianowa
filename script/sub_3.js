@@ -19,10 +19,10 @@ $('.button').click(function () {
     $('.login').toggleClass('slide');
 });
 
-$('section').click(function(){
+$('section').click(function () {
     $('.login').removeClass('slide');
 });
-$('section').click(function(){
+$('section').click(function () {
     $('.button').removeClass('active');
 });
 
@@ -33,11 +33,11 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
-$(window).scroll(function(event){
+$(window).scroll(function (event) {
     didScroll = true;
 });
 
-setInterval(function() {
+setInterval(function () {
     if (didScroll) {
         hasScrolled();
         didScroll = false;
@@ -46,38 +46,39 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
+    if (Math.abs(lastScrollTop - st) <= delta)
         return;
-    
+
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+    if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
+        if (st + $(window).height() < $(document).height()) {
             $('header').removeClass('nav-up').addClass('nav-down');
         }
     }
-    
+
     lastScrollTop = st;
 }
 // 커서 마우스 따라다니게
-$(document).ready(function(){
-    
-    $(document).mousemove(function(e){
+$(document).ready(function () {
+
+    $(document).mousemove(function (e) {
         var mouseX = e.pageX;
         var mouseY = e.pageY;
 
         $('.cursor').css({
             left: mouseX + "px",
-            top : mouseY + "px"
+            top: mouseY + "px"
         })
     })
 })
+
 
 // 현재시간 알림
 function paddedFormat(num) {
@@ -95,3 +96,12 @@ function getTime(){
 setInterval(getTime,1000)
 
 getTime()
+
+// 스크롤
+$(function($) {
+    $(function() {
+      $("#scroller").simplyScroll({
+        speed: 0.5
+      });
+    });
+})(jQuery);

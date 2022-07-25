@@ -78,70 +78,95 @@ $(document).ready(function () {
         })
     })
 })
-//커서 효과
-// document.onmousemove = animateCircles; // circle follow mouse
 
-// var colors = ['#1abc9c', '#3498db', '#f1c40f']
+// 공지사항 탭 관련
+$(function () {
+    var menu01 = $('#menu01');
+    var menu02 = $('#menu02');
+    var menu03 = $('#menu03');
+    var menu04 = $('#menu04');
+    var post = $('.ntap .post');
+    var e = $('.e');
+    var s = $('.s');
+    var n = $('.n');
 
-// function animateCircles(event) {
-//   var circle = document.createElement("div");
-//   circle.setAttribute("class", "circle");
-//   document.body.appendChild(circle); // adds function to body
-
-//   // adds motion
-//   circle.style.left = event.clientX + 'px';
-//   circle.style.top = event.clientY + 'px';
-
-//   // randomize color
-//   var color = colors[Math.floor(Math.random() * colors.length)];
-//   circle.style.borderColor = color;
-
-//   // adds animation
-//   circle.style.transition = "all 0.5s linear 0s";
-
-//   circle.style.left = circle.offsetLeft - 20 + 'px';
-//   circle.style.top = circle.offsetTop - 20 + 'px';
-
-//   circle.style.width = "50px";
-//   circle.style.height = "50px";
-//   circle.style.borderWidth = "5px";
-//   circle.style.opacity = 0;
-// }
-
-
-//client rolling banner 슬라이드 배너
-window.onload = function () {
-    var bannerLeft = 0;
-    var first = 1;
-    var last;
-    var imgCnt = 0;
-    var $img = $(".goods div");
-    var $first;
-    var $last;
-
-    $img.each(function () {   // 5px 간격으로 배너 처음 위치 시킴
-        $(this).css("left", bannerLeft);
-        bannerLeft += $(this).width() + 0;
-        $(this).attr("id", "banner" + (++imgCnt));  // img에 id 속성 추가
+    menu01.click(function () {
+        post.css('display', 'flex')
     });
-    if (imgCnt > 4) {                //배너 9개 이상이면 이동시킴
-        last = imgCnt; setInterval(function () {
-            $img.each(function () {
-                $(this).css("left", $(this).position().left - 1); // 1px씩 왼쪽으로 이동
-            });
-            $first = $("#banner" + first);
-            $last = $("#banner" + last);
-            if ($first.position().left < -340) {    // 제일 앞에 배너 제일 뒤로 옮김                        
-                $first.css("left", $last.position().left + $last.width() + 0);
-                first++;
-                last++;
-                if (last > imgCnt) { last = 1; }
-                if (first > imgCnt) { first = 1; }
-            }
-        }, 10);   //여기 값을 조정하면 속도를 조정할 수 있다.(위에 1px 이동하는 부분도 조정하면 깔끔하게 변경가능하다            
-    }
-};
+    menu02.click(function () {
+        n.css('display', 'flex')
+    });
+    menu02.click(function () {
+        e.css('display', 'none')
+    });
+    menu02.click(function () {
+        s.css('display', 'none')
+    });
+    menu03.click(function () {
+        n.css('display', 'none')
+    });
+    menu03.click(function () {
+        e.css('display', 'none')
+    });
+    menu03.click(function () {
+        s.css('display', 'flex')
+    });
+    menu04.click(function () {
+        n.css('display', 'none')
+    });
+    menu04.click(function () {
+        e.css('display', 'flex')
+    });
+    menu04.click(function () {
+        s.css('display', 'none')
+    });
+});
 
+// 이벤트 텝 관련
+$(function () {
+    var eventmenu01 = $('#eventmenu01');
+    var eventmenu02 = $('#eventmenu02');
+    var eventmenu03 = $('#eventmenu03');
+
+    var ing = $('.ing');
+    var ed = $('.ed');
+    var wc = $('.wc');
+    
+    eventmenu01.click(function () {
+        ing.css('display', 'block')
+    });
+    eventmenu01.click(function () {
+        ed.css('display', 'none')
+    });
+    eventmenu01.click(function () {
+        wc.css('display', 'none')
+    });
+
+    eventmenu02.click(function () {
+        ing.css('display', 'none')
+    });
+    eventmenu02.click(function () {
+        ed.css('display', 'block')
+    });
+    eventmenu02.click(function () {
+        wc.css('display', 'none')
+    });
+
+    eventmenu03.click(function () {
+        ing.css('display', 'none')
+    });
+    eventmenu03.click(function () {
+        ed.css('display', 'none')
+    });
+    eventmenu03.click(function () {
+        wc.css('display', 'flex')
+    });
+
+});
+
+function login(){
+    alert("로그인이 필요합니다.")
+}
 
 // 현재시간 알림
 function paddedFormat(num) {

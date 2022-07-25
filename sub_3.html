@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450px">
+    <title>갤러리</title>
+
+    <link rel="stylesheet" href="./css/sub_3.css">
+    <!-- 슬라이드 css -->
+    <link rel="stylesheet" href="css/jquery.simplyscroll.css">
+    <link rel="stylesheet" href="css/style.css">
+        <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 파피콘 -->
+    <link rel="shortcut icon" href="./images/title_icon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo_b.png" alt="피아노와 로고" class="logo_b">
+            <img src="./images/logo_w.png" alt="피아노와 로고" class="logo_w">
+        </a>
+
+
+        <nav>
+            <ul class="header_depth1">
+                <li><a href="./sub_1.html" class="hover1">새소식</a></li>
+                <li><a href="./sub_2.html" class="hover2">STORE</a></li>
+                <li><a href="./sub_3.html" class="hover3">커뮤니티</a></li>
+                <li><a href="./sub_4.html" class="hover4">고객센터</a></li>
+                <li><a href="./sub_5.html" class="hover5">브랜드 소개</a></li>
+            </ul>
+        </nav>
+        <div class="etc">
+            <a href="#" class="button">
+                <strong class="log"> 로그인/검색</strong>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+        <div class="depth2_bg">
+            <ul class="header_depth2_ul">
+                <li>
+                    <ul class="header_depth2" data-gnb="0">
+                        <li><a href="./sub_1.html#content1">공지사항</a></li>
+                        <li><a href="./sub_1.html#content2">이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="header_depth2" data-gnb="0">
+                        <li><a href="./sub_2.html#content1">레슨</a></li>
+                        <li><a href="./sub_2.html#content3">악보</a></li>
+                        <li><a href="./sub_2.html#content5">SHOP</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="header_depth2" data-gnb="0">
+                        <li><a href="./sub_3.html#content1">BEST갤러리</a></li>
+                        <li><a href="./sub_3.html#content2">갤러리</a></li>
+                        <li><a href="./sub_3.html#content4">자유게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="header_depth2" data-gnb="0">
+                        <li><a href="./sub_4.html#help">FAQ</a></li>
+                        <li><a href="./sub_4.html#security">보안센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="header_depth2" data-gnb="0">
+                        <li><a href="./sub_5.html#content1">OUR VISION</a></li>
+                        <li><a href="./sub_5.html#content2">OUR MISSON</a></li>
+                        <li><a href="./sub_5.html#content3">BRAND IDENTITY</a></li>
+                        <li><a href="./sub_5.html#content4">BRAND COLOR</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="login">
+            <h1><a href="#"><img src="./images/logo_b.png" alt=""></a></h1>
+            <div class="Search">
+                <input type="text"> <img src="./images/searchglasses.png" alt="검색아이콘">
+            </div>
+            <h1 id="timenow"></h1>
+            <div class="login_type">
+                <input type="radio" name="login_tap" id="tap01" checked>
+                <label for="tap01">아이디 로그인</label>
+                <input type="radio" name="login_tap" id="tap02">
+                <label for="tap02">일회성 로그인</label>
+                <br>
+                <div class="tap con1">
+                    <form action="#" method="post">
+                        <input type="text" placeholder="아이디 (대소문자 구분)"> <br>
+                        <input type="password" placeholder="비밀번호"><br>
+
+                        <input type="checkbox" name="" id="login_keep">
+                        <label for="login_keep">
+                            <div class="border">
+                                <svg width="30" height="15" xmlns="http://w3.org/2000/svg" version="1.1"
+                                    viewbox="0 0 80 40">
+                                    <polyline class="st1" points="9.06 20.89 25.85 35.74 50.46 9.35" />
+                                </svg>
+                            </div>
+                            <span> 로그인 유지 </span>
+                        </label>
+                        <p>개인정보 보호를 위해 개인 PC에서만 사용하세요.</p>
+
+                        <br>
+                        <div class="login_do">
+                            <div class="color1"></div>
+                            <a href="#">로그인</a>
+                            <div class="trapezoid">
+                                <ul>
+                                    <li><a href="#">아이디 찾기</a></li>
+                                    <li><a href="#">비밀번호 찾기</a></li>
+                                    <li><a href="#">회원가입</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="or">
+                            <fieldset>
+                                <legend> 또는</legend>
+                            </fieldset>
+                            <a href="https://accounts.google.com/" target="_blank"><img src="./images/icon_g.png"
+                                    alt="구글"></a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="./images/icon_f.png"
+                                    alt="페이스북"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./images/icon_i.png"
+                                    alt="인스타"></a>
+                            <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/U2c8SExB9%252F8uiWh%253FC%255DFW%253F%253DN%2560w%253F%255B_MGZv8l7Q4LS%253A%253Eq4S_OfXeZZ03T4Eb%253Cx66%2560Um"
+                                target="_blank"><img src="./images/icon_k.png" alt="카카오톡"></a>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="tap con2">
+                    <p>
+                        <span> 모바일 앱 실행> 전체메뉴 > 보안설정 > 일회용 로그인 </span>선택 후
+                        <br> 생성되는 일회용 로그인 번호 8자리를 입력해주세요.
+                    </p>
+                    <input type="text" placeholder="4자리" maxlength="4"> <input type="text" placeholder="4자리"> <br>
+                    <a href="#" class="con2_login">로그인</a> <br>
+                    <a href="#">피아노와 앱 설치</a> │
+                    <a href="#">일회용 로그인 안내</a>
+                    <div class="disposable">
+                        <select name="lang" id="lang">
+                            <option value="한글"><a href="#"> 한국어</a></option>
+                            <option value="영어"><a href="#"> 영어</a></option>
+                            <option value="일본"><a href="#"> 일본어</a></option>
+                            <option value="중국"><a href="#"> 중국어</a></option>
+                            <option value="러시아"><a href="#"> 러시아</a></option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--해더 -->
+    <!-- 배너 -->
+    <section id="banner">
+        <div class="b_inner">
+            <div class="inquiry">
+                <p><a href="#">내 게시물 ></a></p>
+            </div>
+            <h1><img src="./images/sub_4/icon3.png" alt="피아노 아이콘"> 피아노와 커뮤니티</h1>
+            <form action="#">
+                <span><img src="./images/sub_4/icon1.png" alt=""> 게시물 검색</span>
+                <input type="text" placeholder="검색어를 입력하세요">
+
+            </form>
+
+        </div>
+    </section>
+    <!-- 배너 -->
+    <section class="content1" id="content1">
+        <div class="title_box">
+            <h1>BEST갤러리</h1>
+            <h2>자신의 연주를 SNS에서 자랑해보세요. <br>
+                매달 인기많은 게시물에 상품을 드립니다.
+            </h2>
+            <p>(SNS게시물에 ‘#피아노와’ 해시테그를 붙여주세요)</p>
+        </div>
+        <div class="best">
+            <img src="./images/sub_3/pianowa1.png" alt="7월 피아노와 수상작">
+            <div class="best1" data-aos="zoom-in-right">
+                <h1>7월의 대상</h1><img src="./images/sub_3/king.png" alt="왕관" class="king">
+                <img src="./images/sub_3/best1.png" alt="유튜브" class="bestimg">
+                <h2>‘우리집피아니스트’ 님</h2>
+                <button>연주 감상하기</button>
+            </div>
+
+            <div class="best2" data-aos="zoom-in-left">
+                <h1>7월의 최우수상</h1>
+                <img src="./images/sub_3/best2.png" alt="인스타" class="bestimg">
+                <h2>'피아노부엉이’ 님</h2>
+                <button>연주 감상하기</button>
+            </div>
+
+            <div class="best3" data-aos="zoom-in-up" data-aos-duration="1500">
+                <h1>7월의 우수상</h1>
+                <img src="./images/sub_3/best3.png" alt="페이스북" class="bestimg">
+                <h2>'피아니스타’ 님</h2>
+                <button>연주 감상하기</button>
+            </div>
+
+            <div class="best4" data-aos="zoom-in-up" data-aos-duration="1500">
+                <h1>더 많은 7월의 SNS을 구경 하세요.</h1>
+                <h2>‘#피아노와’ 게시물 <button>더보기 +</button></h2>
+
+                <img src="./images/sub_3/best4.png" alt="게시물들" class="bestimg">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="content2" id="content2">
+        <div class="title_box">
+            <h1>피아노와 갤러리</h1>
+            <h2>“MAKE EACH DAY YOUR MASTERPLECE!” </h2>
+        </div>
+        <div class="left">
+            <div class="post1">
+                <div class="postimg">
+                    <img src="./images/sub_3/post1.jpg" alt="게시물1">
+                </div>
+                <div class="text">
+                    <h2>가을 느낌 피아노곡</h2>
+                    <h3>2022.06.15│가을사람</h3>
+                    <ul>
+                        <li><img src="./images/sub_3/join.png" alt="조회수"> <span>
+                                3,002</span></li>
+                        <li><img src="./images/sub_3/good.png" alt="추천수"> <span>165</span></li>
+                        <li><img src="./images/sub_3/comment.png" alt="댓글수"> <span>52</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post2">
+                <div class="postimg">
+                    <img src="./images/sub_3/post2.jpg" alt="게시물2">
+                </div>
+                <div class="text">
+                    <h2>학원에서 배운 곡</h2>
+                    <h3>2022.07.07│피린이</h3>
+                    <ul>
+                        <li><img src="./images/sub_3/join.png" alt="조회수"> <span>
+                                1,402</span></li>
+                        <li><img src="./images/sub_3/good.png" alt="추천수"> <span>141</span></li>
+                        <li><img src="./images/sub_3/comment.png" alt="댓글수"> <span>33</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post3">
+                <div class="postimg">
+                    <img src="./images/sub_3/post3.jpg" alt="게시물1">
+                </div>
+                <div class="text">
+                    <h2>‘너의 이름은’ 커버</h2>
+                    <h3>2022.06.15│별은스타</h3>
+
+                    <ul>
+                        <li><img src="./images/sub_3/join.png" alt="조회수"> <span>
+                                5,061</span></li>
+                        <li><img src="./images/sub_3/good.png" alt="추천수"> <span>254</span></li>
+                        <li><img src="./images/sub_3/comment.png" alt="댓글수"> <span>82</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="canter">
+            <img src="./images/sub_3/post4.jpg" alt="메인게시물">
+            <img src="./images/sub_3/best.png" alt="베스트인증" class="best">
+            <div class="text">
+                <div>
+                    <h1>창작곡 ‘내일에게 오늘은’</h1>
+                    <p>하루 하루가 내일을 만들어 가는 것처럼 <br>
+                        오늘 하루도 내일에게 어떤 의미가 되는지 <br>
+                        생각하며 작곡한 피아노 곡입니다.</p>
+                    <h2>2022.06.12│하늘소리</h2>
+                </div>
+                <ul>
+                    <li><img src="./images/sub_3/join.png" alt="조회수"> <span>
+                            52.4만</span></li>
+                    <li><img src="./images/sub_3/good.png" alt="추천수"> <span>9,523</span></li>
+                    <li><img src="./images/sub_3/comment.png" alt="댓글수"> <span>954</span></li>
+                    <li class="share"><a href="#"><img src="./images/sub_3/share.png" alt="공유"> <span>공유하기</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="content3">
+        <ul id="scroller">
+            <li><a href="#"><img src="./images/sub_3/posts1.jpg" alt="게시물"></a></li>
+            <li><a href="#"><img src="./images/sub_3/posts2.jpg" alt="게시물"></a></li>
+            <li><a href="#"><img src="./images/sub_3/posts3.jpg" alt="게시물"></a></li>
+            <li><a href="#"><img src="./images/sub_3/posts4.jpg" alt="게시물"></a></li>
+            <li><a href="#"><img src="./images/sub_3/posts5.jpg" alt="게시물"></a></li>
+            <li><a href="#"><img src="./images/sub_3/posts6.jpg" alt="게시물"></a></li>
+        </ul>
+    </section>
+
+    <section class="content4" id="content4">
+        <div class="title_box">
+            <h1>자유게시판</h1>
+        </div>
+        <div class="FreeBoard">
+            <div class="floor1 FreeBoardpost">
+                <div class="post">
+                    <div class="sign">
+                        <div><img src="./images/sub_3/new.png" alt="새로운"></div>
+                        <p>5분전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>피아노 연습 V-log</h1>
+                        <h2>보통 피아노를 처음 하려고 하면 많은 힘든 점이 있는데...</h2>
+                        <p>하늘사람 │ S******</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>256</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>31</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="sign">
+                        <div><img src="./images/sub_3/new.png" alt="새로운">
+                            <img src="./images/sub_3/hot.png" alt="핫한">
+                        </div>
+                        <p>1시간전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>내가 피아노를 싫어하는 이유</h1>
+                        <h2>나는 피아노를 싫어 했다. 처음에는 어려워서.....</h2>
+                        <p>피아노리 │ P****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>1,253</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>123</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>56</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor2 FreeBoardpost">
+                <div class="post">
+                    <div class="sign">
+                        <div><img src="./images/sub_3/new.png" alt="새로운">
+                            <img src="./images/sub_3/hot.png" alt="핫한">
+                        </div>
+                        <p>6시간전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>피아노 하는 사람 공감 .jpg</h1>
+                        <h2>피아노 좀 쳐봤다면 누구나 공감 할 듯....</h2>
+                        <p>공감피아노│ g*****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>10,369</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>1,563</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>120</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="sign">
+                        <div>
+                        </div>
+                        <p>12시간전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>요즘 자주 듣는 노래들</h1>
+                        <h2>요즘 우울해서 그런가 이 노래 자주 듣는다...</h2>
+                        <p>어디서나 │ w*****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>5,312</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>102</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor3 FreeBoardpost">
+                <div class="post">
+                    <div class="sign">
+                        <div>
+                        </div>
+                        <p>18시간전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>청소할 때 듣는 노래 추천</h1>
+                        <h2>이 노래 들으면서 청소하면 효율 200%상승</h2>
+                        <p>청소꾼 │ c*****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>1,312</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>100</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>42</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="sign">
+                        <div><img src="./images/sub_3/hot.png" alt="핫한">
+                        </div>
+                        <p>1일전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>평범한 중학생 피아노 실력</h1>
+                        <h2>음악실에서 대충 친 멜로디라고 하는데...</h2>
+                        <p>저녁하늘 │ n****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>40,536</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>9,257</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>109</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor4 FreeBoardpost">
+                <div class="post">
+                    <div class="sign">
+                        <div>
+
+                        </div>
+                        <p>1일전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>최근 피아노에 무서웠던 썰</h1>
+                        <h2>내가 고향에 내려갔는데, 거기에 오래된 피아노가 있어.</h2>
+                        <p>놀다가감 │ p*****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>2,061</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>24</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="sign">
+                        <div>
+                            <img src="./images/sub_3/hot.png" alt="핫한">
+                        </div>
+                        <p>1일전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>베이스도 꽤 멋진 것 같음</h1>
+                        <h2>베이스가 깔아주기만해서 주목을 못 받았지만...<h2>
+                                <p>기본이중요 │ b*****</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>8,061</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>2,154</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>250</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor5 FreeBoardpost">
+                <div class="post">
+                    <div class="sign">
+                        <div>
+
+                        </div>
+                        <p>2일전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>체육대회 어울리는 노래 뭐 있냐?</h1>
+                        <h2>다음 주에 체육대회 있는데, 무슨 노래 불러야,,,</h2>
+                        <p>손가락문어 │ f*******</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>4,456</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>254</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>82</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post">
+                    <div class="sign">
+                        <div>
+                            <img src="./images/sub_3/hot.png" alt="핫한">
+                        </div>
+                        <p>2일전</p>
+                    </div>
+                    <div class="post_text">
+                        <h1>장인은 도구를 가리지 않지</h1>
+                        <h2>하지만 좋은 도구는 장인을 가리는 듯...</h2>
+                        <p>이세계에서는내가 │ e*********</p>
+                    </div>
+                    <div class="post_icon">
+                        <div>
+                            <img src="./images/sub_3/join.png" alt="조회수">
+                            <p>40,566</p>
+                        </div>
+                        <div><img src="./images/sub_3/good.png" alt="추천수">
+                            <p>5,254</p>
+                        </div>
+                        <div><img src="./images/sub_3/comment.png" alt="댓글수">
+                            <p>282</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="writing">
+            <a href="#">
+                <p>글쓰기</p>
+            </a>
+        </div>
+        <div class="page">
+            <ul>
+                <li> <a href="#"><img src="./images/sub_3/page1.png" alt="맨처음페이지"></a></li>
+                <li> <a href="#"><img src="./images/sub_3/page2.png" alt="이전페이지"></a></li>
+                <li><a href="#"><span>1</span></a></li>
+                <li><a href="#"><span>2</span></a></li>
+                <li><a href="#"><span>3</span></a></li>
+                <li><a href="#"><span>4</span></a></li>
+                <li><a href="#"><span>5</span></a></li>
+                <li><a href="#"><span>6</span></a></li>
+                <li><a href="#"><span>7</span></a></li>
+                <li><a href="#"><span>8</span></a></li>
+                <li><a href="#"><span>9</span></a></li>
+                <li><a href="#"><span>10</span></a></li>
+                <li><a href="#"><img src="./images/sub_3/page3.png" alt="다음페이지"></a></li>
+                <li><a href="#"><img src="./images/sub_3/page4.png" alt="마지막페이지"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="content5">
+        <article>
+            <div>
+                <h1>게시판 이용 안내</h1>
+                <ul>
+                    <li><a href="#">게시판 이용 수칙 <span> ></span></a></li>
+                    <li><a href="#">불량이용자 제제 현황 <span> ></span></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h1>1:1 상담</h1>
+                <ul>
+                    <li><a href="#">평일: 다음 날 답변 완료 </a></li>
+                    <li><a href="#">토,일,공휴일: 휴일 이후 답변완료</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h1>전화 1234-5679</h1>
+                <ul>
+                    <li><a href="#">평일: 오전 9시 ~ 오후 6시 </a></li>
+                    <li><a href="#">토,일,공휴일: 휴무</a></li>
+                </ul>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_inner">
+
+            <div class="footer_logo">
+                <img src="./images/logo_w.svg" alt="">
+            </div>
+
+
+            <ul class="footer_sns">
+                <li><a href="https://accounts.google.com/" target="_blank">
+                        <img src="./images/footer_g.svg" alt="구글"></a>
+                </li>
+                <li><a href="https://www.facebook.com" target="_blank">
+
+                        <img src="./images/footer_f.svg" alt="페이스북">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./images/footer_ins.svg" alt="인스타">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/U2c8SExB9%252F8uiWh%253FC%255DFW%253F%253DN%2560w%253F%255B_MGZv8l7Q4LS%253A%253Eq4S_OfXeZZ03T4Eb%253Cx66%2560Um"
+                        target="_blank">
+                        <img src="./images/footer_kakao.svg" alt="카카오">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="https://line.me/ko/" target="_blank">
+
+
+                        <img src="./images/footer_line.svg" alt="라인"> </a>
+
+                </li>
+                <li>
+                    <a href="https://web.telegram.org/k/" target="_blank">
+                        <img src="./images/footer_tel.svg" alt="텔레그램"></a>
+                </li>
+            </ul>
+            <ul class="footer_menu">
+                <li>
+                    <a href="#">개인정보 처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">운영정책</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">익명신고</a>
+                </li>
+                <li>
+                    <a href="#">인재채용</a>
+                </li>
+                <li>
+                    <a href="#">오시는 길</a>
+                </li>
+
+            </ul>
+            <div class="f_text">
+                <p class="f_p1">피아노와│부산광역시 중구 중앙대로 26 다원중앙타워 10층│전화 010-5349-9867│팩스 051-123-4567</p>
+                <p class="f_p2">© Pianowa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 푸터 -->
+
+    <!-- 커서 변경 -->
+    <div class="cursor">
+        <img src="./images/cursor.svg" alt="" class="tri">
+        <img src="./images/cursor_a.svg" alt="" class="arrow">
+    </div>
+    <!-- 제이쿼리 라이브러리, 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script/sub_3.js"></script>
+    <!-- 스크롤 제이쿼리 -->
+    <script src="script/jquery.simplyscroll.min.js"></script>
+    <!-- aos 소스 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+    <script src="script/aos.js"></script>
+
+</body>
+
+</html>

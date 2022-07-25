@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 슬라이드배너 꾸미기 */
+.slide {
+	width: 100%;
+	height: 100%;
+}
+
+.slide .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.slide .swiper-slide img {
+	width: 100%;
+}
+
+/*이동버튼 영역*/
+.slide .swiper-button-next:after,
+.slide .swiper-button-prev:after {
+	display: none;
+}
+
+/* 소스에 들어있는 버튼 삭제 */
+.slide .swiper-button-next,
+.slide .swiper-button-prev {
+	width: 27px;
+	height: 50px;
+}
+
+/* 버튼 크기 */
+.slide .swiper-button-prev {
+	left: 10px;
+	background: url(../images/prev.png);
+}
+
+/* 버튼 위치, 버튼 이미지 */
+.slide .swiper-button-next {
+	right: 10px;
+	background: url(../images/next.png);
+}
+
+/* 버튼 위치, 버튼 이미지 */
+.slide .swiper-button-prev:hover {
+	background: url(../images/prev_hover.png);
+}
+
+/* 버튼 호버 이미지 */
+.slide .swiper-button-next:hover {
+	background: url(../images/next_hover.png);
+}
+
+/* 버튼 호버 이미지 */
+
+/*블릿버튼 영역*/
+.slide .swiper-pagination-bullet {
+	background: pink;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide .swiper-pagination-fraction,
+.slide .swiper-pagination-custom,
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: 10px;
+}
+
+/* 블릿버튼 위치 */

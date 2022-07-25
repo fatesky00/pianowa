@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450px">
+    <title>SHOP</title>
+    <!-- 썬플라워 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- 슬라이드 css -->
+    <link href="css/swiper.css" rel="stylesheet" type="text/css"><!-- 수정X -->
+    <link href="css/slidebanner.css" rel="stylesheet" type="text/css">
+    <!--디자인에 맞게 수정-->
+
+    <link rel="stylesheet" href="./css/sub_2.css">
+    <!-- 파피콘 -->
+    <link rel="shortcut icon" href="./images/title_icon.svg" type="image/x-icon">
+</head>
+
+<body>
+        <!-- header -->
+        <header>
+            <a href="./index.html">
+                <img src="./images/logo_b.png" alt="피아노와 로고" class="logo_b">
+                <img src="./images/logo_w.png" alt="피아노와 로고" class="logo_w">
+            </a>
+    
+    
+            <nav>
+                <ul class="header_depth1">
+                    <li><a href="./sub_1.html" class="hover1">새소식</a></li>
+                    <li><a href="./sub_2.html" class="hover2">STORE</a></li>
+                    <li><a href="./sub_3.html" class="hover3">커뮤니티</a></li>
+                    <li><a href="./sub_4.html" class="hover4">고객센터</a></li>
+                    <li><a href="./sub_5.html" class="hover5">브랜드 소개</a></li>
+                </ul>
+            </nav>
+            <div class="etc">
+                <a href="#" class="button">
+                    <strong class="log"> 로그인/검색</strong>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="depth2_bg">
+                <ul class="header_depth2_ul">
+                    <li>
+                        <ul class="header_depth2" data-gnb="0">
+                            <li><a href="./sub_1.html#content1">공지사항</a></li>
+                            <li><a href="./sub_1.html#content2">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="header_depth2" data-gnb="0">
+                            <li><a href="./sub_2.html#content1">레슨</a></li>
+                            <li><a href="./sub_2.html#content3">악보</a></li>
+                            <li><a href="./sub_2.html#content5">SHOP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="header_depth2" data-gnb="0">
+                            <li><a href="./sub_3.html#content1">BEST갤러리</a></li>
+                            <li><a href="./sub_3.html#content2">갤러리</a></li>
+                            <li><a href="./sub_3.html#content4">자유게시판</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="header_depth2" data-gnb="0">
+                            <li><a href="./sub_4.html#help">FAQ</a></li>
+                            <li><a href="./sub_4.html#security">보안센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="header_depth2" data-gnb="0">
+                            <li><a href="./sub_5.html#content1">OUR VISION</a></li>
+                            <li><a href="./sub_5.html#content2">OUR MISSON</a></li>
+                            <li><a href="./sub_5.html#content3">BRAND IDENTITY</a></li>
+                            <li><a href="./sub_5.html#content4">BRAND COLOR</a></li>
+    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="login">
+                <h1><a href="#"><img src="./images/logo_b.png" alt=""></a></h1>
+                <div class="Search">
+                    <input type="text"> <img src="./images/searchglasses.png" alt="검색아이콘">
+                </div>
+                <h1 id="timenow"></h1>
+                <div class="login_type">
+                    <input type="radio" name="login_tap" id="tap01" checked>
+                    <label for="tap01">아이디 로그인</label>
+                    <input type="radio" name="login_tap" id="tap02">
+                    <label for="tap02">일회성 로그인</label>
+                    <br>
+                    <div class="tap con1">
+                        <form action="#" method="post">
+                            <input type="text" placeholder="아이디 (대소문자 구분)"> <br>
+                            <input type="password" placeholder="비밀번호"><br>
+    
+                            <input type="checkbox" name="" id="login_keep">
+                            <label for="login_keep">
+                                <div class="border">
+                                    <svg width="30" height="15" xmlns="http://w3.org/2000/svg" version="1.1"
+                                        viewbox="0 0 80 40">
+                                        <polyline class="st1" points="9.06 20.89 25.85 35.74 50.46 9.35" />
+                                    </svg>
+                                </div>
+                                <span> 로그인 유지 </span>
+                            </label>
+                            <p>개인정보 보호를 위해 개인 PC에서만 사용하세요.</p>
+    
+                            <br>
+                            <div class="login_do">
+                                <div class="color1"></div>
+                                <a href="#">로그인</a>
+                                <div class="trapezoid">
+                                    <ul>
+                                        <li><a href="#">아이디 찾기</a></li>
+                                        <li><a href="#">비밀번호 찾기</a></li>
+                                        <li><a href="#">회원가입</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="or">
+                                <fieldset>
+                                    <legend> 또는</legend>
+                                </fieldset>
+                                <a href="https://accounts.google.com/" target="_blank"><img src="./images/icon_g.png" alt="구글"></a>
+                                <a href="https://www.facebook.com" target="_blank"><img src="./images/icon_f.png" alt="페이스북"></a>
+                                <a href="https://www.instagram.com/" target="_blank"><img src="./images/icon_i.png" alt="인스타"></a>
+                                <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/U2c8SExB9%252F8uiWh%253FC%255DFW%253F%253DN%2560w%253F%255B_MGZv8l7Q4LS%253A%253Eq4S_OfXeZZ03T4Eb%253Cx66%2560Um" target="_blank"><img src="./images/icon_k.png" alt="카카오톡"></a>
+                            </div>
+    
+                        </form>
+                    </div>
+    
+                    <div class="tap con2">
+                        <p>
+                            <span> 모바일 앱 실행> 전체메뉴 > 보안설정 > 일회용 로그인 </span>선택 후
+                            <br> 생성되는 일회용 로그인 번호 8자리를 입력해주세요.
+                        </p>
+                        <input type="text" placeholder="4자리" maxlength="4"> <input type="text" placeholder="4자리"> <br>
+                        <a href="#" class="con2_login">로그인</a> <br>
+                        <a href="#">피아노와 앱 설치</a> │
+                        <a href="#">일회용 로그인 안내</a>
+                        <div class="disposable">
+                            <select name="lang" id="lang">
+                                <option value="한글"><a href="#"> 한국어</a></option>
+                                <option value="영어"><a href="#"> 영어</a></option>
+                                <option value="일본"><a href="#"> 일본어</a></option>
+                                <option value="중국"><a href="#"> 중국어</a></option>
+                                <option value="러시아"><a href="#"> 러시아</a></option>
+    
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--해더 -->
+    <!-- 배너 -->
+    <section id="banner">
+        <div class="b_inner">
+            <div class="inquiry">
+                <p><a href="#">내 장바구니 ></a></p>
+            </div>
+            <h1><img src="./images/sub_4/icon3.png" alt="피아노 아이콘"> 피아노와 S T O R E</h1>
+            <form action="#">
+                <span><img src="./images/sub_4/icon1.png" alt=""> 상품 검색</span>
+                <input type="text" placeholder="검색어를 입력하세요">
+
+            </form>
+
+        </div>
+    </section>
+    <!-- 배너 -->
+
+    <section id="content1">
+        <div class="class">
+            <h1> 피아노와 LESSON</h1>
+            <table class="product1">
+                <tr>
+                    <th><a href="#"><img src="./images/sub_2/class1.jpg" alt="클래스"></a></th>
+                    <th><a href="#"><img src="./images/sub_2/class2.jpg" alt="클래스"></a></th>
+                    <th><a href="#"><img src="./images/sub_2/class3.jpg" alt="클래스"></a></th>
+                    <th><a href="#"><img src="./images/sub_2/class4.jpg" alt="클래스"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="#"><img src="./images/sub_2/class5.jpg" alt="클래스"></a></th>
+                    <th><a href="#"><img src="./images/sub_2/class6.jpg" alt="클래스"></a></th>
+                    <th><a href="#"><img src="./images/sub_2/class7.jpg" alt="클래스"></a></th>
+                    <th><a href="#"><img src="./images/sub_2/class8.jpg" alt="클래스"></a></th>
+                </tr>
+            </table>
+            <div class="more"><a href="#"> MORE + </a></div>
+        </div>
+    </section>
+    <!-- 컨2 베너 -->
+    <section id="content2">
+        <!-- 슬라이드 구문 -->
+        <div class="swiper-container slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner1">
+                        <div class="b1_inner">
+                            <div class="b_txt">
+                                <h1>#Piano & Life</h1>
+                                <p>피아노와 일상 공유하기 </p>
+                            </div>
+                            <img src="./images/sub_2/E1.png" alt="물결" class="wv1">
+                            <img src="./images/sub_2/E2.png" alt="물결" class="wv2">
+                            <img src="./images/sub_2/E3.png" alt="사진" class="pin">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner2">
+                        <div class="b2_inner">
+                            <div class="b_txt">
+                                <h1>유료 악보 판매 <br>
+                                    신청 안내</h1>
+                                <p>본인이 창작, 채보 악보 판매</p>
+                            </div>
+                            <img src="./images/sub_2/E4.png" alt="음표" class="m1">
+                            <img src="./images/sub_2/E5.png" alt="음표" class="m2">
+                            <img src="./images/sub_2/E6.png" alt="음표" class="m3">
+                            <img src="./images/sub_2/E7.png" alt="보면대" class="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- 컨3 악보 -->
+    <section id="content3">
+        <div class="sheet">
+            <div class="title1">
+                <h1>피아노와 악보</h1>
+                <div class="Search1">
+                    <input type="text" placeholder="악보를 검색하세요"> <img src="./images/searchglasses.png" alt="검색아이콘">
+                </div>
+            </div>
+            <div class="title2">
+                <h2>추천악보</h2>
+                <div class="radio1">
+                    <input type="radio" id="new" name="tt" checked>
+                    <label for="new">● 최신순</label>
+                    <input type="radio" id="popular" name="tt">
+                    <label for="popular">● 인기순</label>
+                </div>
+            </div>
+            <div class="sh_post">
+                <div class="post">
+                    <div class="sh_img">
+                        <img src="./images/sub_2/sm1.png" alt="악보그림">
+                    </div>
+                    <div class="sh_txt">
+                        <h1>뮤지컬 ‘그날들’ OST</h1>
+                        <h2>Overture 외 19곡</h2>
+                        <div class="q">
+                            <h3>2021.03.08</h3>
+                            <p>조회수 14만</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="sh_img">
+                        <img src="./images/sub_2/sm2.png" alt="악보그림">
+                    </div>
+                    <div class="sh_txt">
+                        <h1>봄과 함께하는 피아노 연주</h1>
+                        <h2>안녕, 봄 외 6곡</h2>
+                        <div class="q">
+                            <h3>2021.02.22</h3>
+
+                            <p>조회수 1.4만</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sh_post">
+                <div class="post">
+                    <div class="sh_img">
+                        <img src="./images/sub_2/sm3.png" alt="악보그림">
+                    </div>
+                    <div class="sh_txt">
+                        <h1>지브리를 벗어난 ‘히사이시 조 명곡’</h1>
+                        <h2>Nostalgia 외 19곡</h2>
+                        <div class="q">
+                            <h3>2022.05.20</h3>
+
+                            <p>조회수 3,782</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="sh_img">
+                        <img src="./images/sub_2/sm4.png" alt="악보그림">
+                    </div>
+                    <div class="sh_txt">
+                        <h1>나 홀로 집에 OST <br>
+                            ‘Somewhere in My Memory</h1>
+                        <h2>Somewhere in My Memory</h2>
+                        <div class="q">
+                            <h3>2021.02.22</h3>
+
+                            <p>조회수 1.6만</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content4">
+        <a href="#">
+            <div class="sbanner">
+                <h1>피아노와 신상 굿즈 출시</h1>
+                <h2>#달력 #에코백 #행거</h2>
+                <img src="./images/sub_2/G1.png" alt="행거백">
+                <img src="./images/sub_2/G2.png" alt="행거흑">
+                <img src="./images/sub_2/G3.png" alt="에코백">
+                <svg>
+                    <circle cx="900" cy="480" r="450" fill="#ecd8f8" />
+                </svg>
+            </div>
+            <img src="./images/sub_2/G4.png" alt="달력" class="c">
+        </a>
+    </section>
+
+    <section id="content5">
+        <div class="shop">
+            <h1>피아노와 SHOP</h1>
+            <div class="ppost">
+                <div class="pimg"><img src="./images/sub_2/piano1.png" alt="상품1">
+                </div>
+                <div class="ptxt">
+                    <h3>순수 국내에서 제작하였습니다.</h3>
+                    <h2>비바체프로- 760 디지털 피아노 원목의자 포함
+                        원목 61건반 디지털 피아노</h2>
+                    <p>피아노를 시작하는 사람에게 특별한 선물을 해보세요.</p>
+                    <div class="price">
+                        <h4>무료 배송</h4>
+                        <h1>369,990<span>원</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="ppost">
+
+                <div class="ptxt rig">
+
+                    <h2>토이게이트 교습용 디지털 피아노 TYPE D (실버 ) 61키 슬림형 스탠드 포함</h2>
+                    <p>100개의 악기와 100개의 리듬이 들어있는 <br>
+                        경쾌한 타건감의 입문용 피아노 MP3재생, 교습 모드 등의 다양한 기능 <br>
+                        61건반 디지컬 키보드</p>
+                    <div class="price">
+                        <h4>무료 배송</h4>
+                        <h1>93,500<span>원</span></h1>
+                    </div>
+
+                </div>
+                <div class="pimg"><img src="./images/sub_2/piano2.png" alt="상품2">
+                </div>
+            </div>
+            <div class="ppost">
+                <div class="pimg"><img src="./images/sub_2/piano3.png" alt="상품3">
+                </div>
+                <div class="ptxt">
+
+                    <h2>듀로 DF500 디지털피아노 전자 피아노</h2>
+                    <p>풀사이즈 그랜드 피아노 음원 샘플링, 다양한 음색, 편리한 인터페이스 <br>
+                        AGHA 그레이드 해머 액션 건반, 자동 반주기, 홈 레코딩 등의 다양한 기능
+                    </p>
+                    <div class="price">
+                        <h4>무료 배송</h4>
+                        <h1>648,000<span>원</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content6">
+        <div class="attention">
+            <h1>시선집중</h1>
+            <div class="apost">
+                <img src="./images/sub_2/F1.png" alt="시선집중상품1">
+                <img src="./images/sub_2/F2.png" alt="시선집중상품2">
+                <img src="./images/sub_2/F3.png" alt="시선집중상품3">
+            </div>
+        </div>
+    </section>
+    <section id="content7">
+        <div class="timedeal">
+            <h1>타임딜</h1>
+            <div class="tpost">
+                <img src="./images/sub_2/time1.png" alt="타임딜상품1">
+                <div class="ttext">
+                    <h1 class="text-center" id="count-down-timer"></h1>
+                    <img src="./images/sub_2/time2.png" alt="타임특가">
+                    <h2>다이나톤 프리미엄 디지털피아노 ST220</h2>
+                    <h3><span>타임특가</span> 869,000원 <s> 1,500,000원</s> </h3>
+                    <h4>무료배송ㆍ 수량 1,523개 남음</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content8"><a href="#">
+        <img src="./images/sub_2/lastbanner.jpg" alt="피아노조율쿠폰"></a>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_inner">
+
+            <div class="footer_logo">
+                <img src="./images/logo_w.svg" alt="">
+            </div>
+
+
+            <ul class="footer_sns">
+                <li><a href="https://accounts.google.com/" target="_blank">
+                        <img src="./images/footer_g.svg" alt="구글"></a>
+                </li>
+                <li><a href="https://www.facebook.com" target="_blank">
+
+                        <img src="./images/footer_f.svg" alt="페이스북">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./images/footer_ins.svg" alt="인스타">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/U2c8SExB9%252F8uiWh%253FC%255DFW%253F%253DN%2560w%253F%255B_MGZv8l7Q4LS%253A%253Eq4S_OfXeZZ03T4Eb%253Cx66%2560Um" target="_blank">
+                        <img src="./images/footer_kakao.svg" alt="카카오">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="https://line.me/ko/" target="_blank">
+
+
+                        <img src="./images/footer_line.svg" alt="라인"> </a>
+
+                </li>
+                <li>
+                    <a href="https://web.telegram.org/k/" target="_blank">
+                        <img src="./images/footer_tel.svg" alt="텔레그램"></a>
+                </li>
+            </ul>
+            <ul class="footer_menu">
+                <li>
+                    <a href="#">개인정보 처리방침</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">운영정책</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">익명신고</a>
+                </li>
+                <li>
+                    <a href="#">인재채용</a>
+                </li>
+                <li>
+                    <a href="#">오시는 길</a>
+                </li>
+
+            </ul>
+            <div class="f_text">
+                <p class="f_p1">피아노와│부산광역시 중구 중앙대로 26 다원중앙타워 10층│전화 010-5349-9867│팩스 051-123-4567</p>
+                <p class="f_p2">© Pianowa. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<!-- 푸터 -->
+
+    <div class="cursor">
+        <img src="./images/cursor.svg" alt="" class="tri">
+        <img src="./images/cursor_a.svg" alt="" class="arrow">
+    </div>
+    <!-- 제이커리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script/sub_2.js"></script>
+
+    <script src="script/swiper.min.js"></script><!-- 수정X -->
+    <script src="script/slidebanner.js"></script>
+    <!--디자인에 맞게 수정-->
+</body>
+
+</html>
