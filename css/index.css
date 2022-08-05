@@ -148,8 +148,7 @@ body {
   line-height: 26px;
   color: #020721;
   background-color: #fff;
-  overflow-x: hidden;
-
+  min-width: 1450px;
 }
 
 
@@ -1380,30 +1379,36 @@ transform: rotate(-25deg);
   width: calc(100%/3);
   height: 220PX;
   line-height: 34px;
+  position: relative;
 }
 
 .banner .b1 {
-  background: url(../images/banner1.jpg) no-repeat;
-  background-size: contain;
+  background: url(../images/ban1.jpg) no-repeat;
+  background-size: cover;
 }
 
 .banner .b2 {
-  background: url(../images/banner2.jpg) no-repeat;
-  background-size: contain
+  background: url(../images/ban2.jpg) no-repeat;
+  background-size: cover
 }
 
 .banner .b3 {
-  background: url(../images/banner3.jpg) no-repeat;
-  background-size: contain
+  background: url(../images/ban3.jpg) no-repeat;
+  background-size: cover
 }
+.banner img{position: absolute; top: 0; right: 0; ;display: block; height: 100%; z-index: 0;}
 
 
 .banner div h2 {
-  padding-bottom: 80px;
+  position: relative;
+  padding-bottom: 13%;
+  z-index: 1;
 }
 
 .banner div h3 {
+  position: relative;
   color: #f1f5f7;
+  z-index: 1
 }
 
 .banner .b2 h3 {

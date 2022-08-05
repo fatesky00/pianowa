@@ -148,7 +148,7 @@ body {
     line-height: 26px;
     color: #020721;
     background-color: #fff;
-    overflow-x: hidden;
+    min-width: 1450px;
 
 }
 
