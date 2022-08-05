@@ -1316,7 +1316,7 @@ button{cursor: none;}
 
 /* 자유게시판 */
 .content4 {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
     background: #f1f5f7;
 }

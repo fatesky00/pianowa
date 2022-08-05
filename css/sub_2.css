@@ -1140,7 +1140,7 @@ input[type='password']::placeholder {
 #content7 .timedeal .tpost .ttext h3 s{font-size: 18px; color: #aaa;}
 #content7 .timedeal .tpost .ttext h4{ color: #aaa; font-family: 'S-CoreDream-3Light'}
 
-#content8 {padding: 80px;}
+#content8 {padding: 80px 0;}
 #content8 img{display: block; width: 1400px; margin: 0 auto;}
 
 /* 푸터 */
