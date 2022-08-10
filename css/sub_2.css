@@ -1095,7 +1095,8 @@ input[type='password']::placeholder {
 #content4 .sbanner img:nth-child(5){width: 500px;position: absolute; top: 5%; left: 50%; z-index: 1}
 #content4 .sbanner svg:nth-child(6){position: absolute; top: 0%; left: 0%; width:100%;height: 100%; z-index: 0;}
 #content4 .c{position: absolute; top: 29%; width: 350px; left: 41%; z-index: 1;}
-#content4 img:hover{transform: scale(1.2); transition: 0.4s;}
+#content4 .sbanner img:hover{transform: scale(1.2); transition: 0.4s; z-index: 10;}
+#content4 img:hover{transform: scale(1.2); transition: 0.4s; z-index: 10;}
 #content4 circle{animation: lg 5s infinite;}
 @keyframes lg{
     50%{transform: translateY(-10%); fill: #fffea4;}

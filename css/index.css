@@ -117,6 +117,14 @@ body {
 .cursor .arrow {
   display: none;
 }
+/* 커서효과
+ .circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  position: absolute;
+  border-radius: 15px;
+} */
 
 @keyframes cursor {
   0% {
@@ -857,7 +865,7 @@ input[type='password']::placeholder {
 }
 
 .content2 .bgcolor {  
-  width: 466%;
+  width: calc(466% + 2px);
   height: 1080px;
   padding-top: 100px;
   position: absolute;
