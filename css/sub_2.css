@@ -128,6 +128,22 @@ body {
     animation: cursor 10s linear infinite;
     pointer-events: none;
 }
+/* 스크롤 색상 */
+body::-webkit-scrollbar {/*스크롤바 전체*/
+    width: 10px;
+    height: 10px;
+  }
+  body::-webkit-scrollbar-thumb {/*스크롤바 막대*/
+    background-color: #5b54a4;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  body::-webkit-scrollbar-track {/*스크롤바 막대 외부*/
+    background-color: #ebeafd;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
 
 .cursor .arrow {
     display: none;
